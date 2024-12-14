@@ -57,6 +57,8 @@ function renderTicTacToe() {
       Draw: 0,
     }
 
+    startingGame();
+
     function startingGame() {
 
       cells.forEach(cell => cell.addEventListener('click', cellClicked));
