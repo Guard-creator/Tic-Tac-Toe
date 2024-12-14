@@ -1,4 +1,4 @@
-function renderTicTacToe() {
+function renderTicTacToe(robotPlay) {
 
       let html = `
 
@@ -98,8 +98,8 @@ function renderTicTacToe() {
 
     function changePlayer() {
 
-      currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-      statusText.textContent = `${currentPlayer}'s turn`;
+        currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+        statusText.textContent = `${currentPlayer}'s turn`;
 
     }
 
@@ -196,6 +196,6 @@ document.querySelector('.js-play-robot')
   .addEventListener('click', () => {
 
     document.querySelector('.main-page').innerHTML = '';
-    renderTicTacToe();
+    renderTicTacToe('playWithRobot');
 
   })
