@@ -23,7 +23,6 @@ function renderTicTacToe(robotPlay) {
       <div class="score-status"></div>
 
       <button class="restart-button">Restart</button>
-      <button class="change-player js-change-player">Change Player</button>
 
     `;
 
@@ -34,7 +33,6 @@ function renderTicTacToe(robotPlay) {
     const statusText = document.querySelector('.status-bar');
     const restartbutton = document.querySelector('.restart-button');
     const scorestatus = document.querySelector('.score-status');
-    const changingplayer = document.querySelector('.js-change-player');
 
     const winningCondition = [
       [0, 1, 2],
@@ -65,7 +63,6 @@ function renderTicTacToe(robotPlay) {
       statusText.textContent = `${currentPlayer}'s turn`;
       scorestatus.textContent = `X: ${score.X}, O: ${score.O} Draw: ${score.Draw}`;
       restartbutton.addEventListener('click', restartbtn);
-      changingplayer.addEventListener('click', changePlayer)
       runningGame = true;
 
     }
