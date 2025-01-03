@@ -21,7 +21,7 @@ Win by aligning three marks in a row, column, or diagonal.
 Track scores on the scoreboard and restart anytime.
 Project Structure
 Dynamic Rendering: The game board and status are dynamically rendered in the DOM.
-Robot Play: The AI makes random valid moves when playing against a robot.
+Robot Play: The Robot makes random moves when playing against a robot.
 Winning Logic: Predefined winning conditions check for a winner or a draw after each move.
 
 Demo
